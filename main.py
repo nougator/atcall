@@ -33,12 +33,12 @@ class Main():
 	def function(self,text):
 		try:
 			text = text.lower()
-			cont = text.split(self.new)
+			cont = text.split(self.func)
 			for i in cont:
 				t = i
 				i = i.split()
 				if len(i) > 0:
-					self.funcs[i[1]] = i[2:]
+					self.funcs[i[0]] = i[1:]
 			#print(self.funcs)
 		except:
 			pass
@@ -161,7 +161,7 @@ class Main():
 									while self.values[int(self.funcs[i][loop+1])] != int(self.funcs[i][loop+3]):
 										Main().parse(x=self.funcs[i][loop+4])
 							except Exception as e:
-								#print(e)
+								print(e)
 								print("error")
 						elif t == self.if_:
 							try:
