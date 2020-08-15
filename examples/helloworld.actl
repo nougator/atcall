@@ -1,6 +1,7 @@
+--NEW--
 FUNCTION MAIN
 	MOVE 0
-	SET 72 
+	SET 72 ; j
 	PRINT 
 	RST
 	SET 101
