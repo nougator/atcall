@@ -40,12 +40,11 @@ CALL (functions name to execute)
 
 <br>
 
-atcall will automaticaly run the `MAIN` function. You need to use `--NEW--` when defining a new function. <br>
+atcall will automaticaly run the `MAIN` function. <br>
 
 e.g
 
 ```hs
---NEW--
 FUNCTION MAIN
   MOVE 0
   SET 10
@@ -54,13 +53,11 @@ FUNCTION MAIN
  
  or for multiple functions<br>
  ```hs
- --NEW--
  FUNCTION PRINT_NEW_LINE
   MOVE 0
   SET 10
   PRINT
-  
---NEW--
+
 FUNCTION MAIN
   CALL PRINT_NEW_LINE
  ```
